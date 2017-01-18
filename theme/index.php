@@ -1,3 +1,4 @@
+<?php get_header(); ?>
 <!--   -->
 
 			<div class="row"><section class="features-list" id="amandel">
@@ -92,4 +93,4 @@
 				</div>
 			</div>
             
-            
+    <?php get_footer(); ?>        
