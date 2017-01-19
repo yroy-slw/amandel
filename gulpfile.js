@@ -11,9 +11,8 @@ gulp.task('default', function(){
     console.log('default gulp task...')
 });
 
-gulp.task('sass', function () {
-  gulp.src('theme/css/src/*.scss')
-    	.pipe(sass())
+gulp.task('css', function () {
+  gulp.src('theme/css/src/*.css')
       .pipe(concat('global.css'))
       .pipe(cleanCss({
         aggressiveMerging: false
@@ -37,7 +36,7 @@ gulp.task('img', function() {
     	.pipe(gulp.dest('theme/img'))
 });
 
-gulp.task('default', ['sass', 'js', 'img'],function(){
+gulp.task('default', ['css', 'js', 'img'],function(){
     gulp.watch('theme/css/src/*.scss', ['sass']);
     gulp.watch('theme/js/src/*.js', ['js']);
     gulp.watch('theme/img/src/*.{png,jpg,gif}', ['img']);

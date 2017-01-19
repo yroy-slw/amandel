@@ -1,11 +1,10 @@
 <?php wp_footer(); ?>
-<script src="<?php bloginfo('template_url'); ?>/js/global.js"></script>
 <footer>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-2">
 						<h1 class="footer-logo">
-						<img src="img/logo-amandel-.png" alt="Footer Logo amandel">
+						<img src="<?php bloginfo('template_url'); ?>/img/logo-amandel-.png" alt="Footer Logo amandel">
 						</h1>
 					</div>
 					<div class="col-md-10">
@@ -51,16 +50,8 @@
                
 <!--   -->  
              
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="js/min/toucheffects-min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="js/flickity.pkgd.min.js"></script>
-		<script src="js/jquery.fancybox.pack.js"></script>
 
-		<script src="js/retina.js"></script>
-		<script src="js/waypoints.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/min/scripts-min.js"></script>
+		<script src="<?php bloginfo('template_url'); ?>/js/global.js"></script>
         
         
 <script>
