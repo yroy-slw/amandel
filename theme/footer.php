@@ -4,15 +4,12 @@
 				<div class="row">
 					<div class="col-md-2">
 						<h1 class="footer-logo">
-						<img src="<?php bloginfo('template_url'); ?>/img/logo-amandel-.png" alt="Footer Logo amandel">
+							<img src="<?php bloginfo('template_url'); ?>/img/logo-amandel-.png" alt="Footer Logo amandel">
 						</h1>
 					</div>
 					<div class="col-md-10">
 						<ul class="footer-nav">
-							<li><a href="http://amandel.ch/index.html">amandel</a></li>
-                         <li><a href="http://amandel.ch/amandel-membre.html">membre</a></li>
-							<li><a href="http://amandel.ch/amandel-partenaire.html">partenaire</a></li>
-                         <li><a href="http://amandel.ch/amandel-contact.html">contact</a></li>
+							<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
 						</ul>
 					</div>
 				</div>
@@ -38,12 +35,9 @@
      
 		<div class="overlay overlay-boxify">
 			<nav>
-						<ul class="footer-nav">
-							<li><a href="http://amandel.ch/index.html">amandel</a></li>
-                         <li><a href="http://amandel.ch/amandel-membre.html">membre</a></li>
-							<li><a href="http://amandel.ch/amandel-partenaire.html">partenaire</a></li>
-                         <li><a href="http://amandel.ch/amandel-contact.html">contact</a></li>
-						</ul>
+				<ul class="footer-nav">
+					<?php wp_nav_menu( array( 'theme_location' => 'pages' ) ); ?>
+				</ul>
 			</nav>
 		</div>
         
