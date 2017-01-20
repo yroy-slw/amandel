@@ -1209,18 +1209,16 @@ Nav Overlay
 }
 .overlay ul {
     position: relative;
-    display: inline-block;
+    display: block;
     margin: 0 auto;
     padding: 0;
     list-style: none;
+    width: 100%;
 }
 .overlay ul li {
     display: block;
-    float: left;
-    margin-right: 10px;
-}
-.overlay ul li:last-child {
-    margin-right: 20px
+    float: none;
+    width: 100%;
 }
 .overlay ul li i {
     display: block;
@@ -1229,24 +1227,24 @@ Nav Overlay
 }
 .overlay ul li a {
     display: block;
-	float: left;
-	margin:10px 0 0 20px;
-	padding: 30px 0;
+    float: none;
+    padding: 30px 0;
     min-width: 220px;
-    border: 1px solid #5F5F5F;
-    border-radius: 8px;
+    border-top: 1px solid #5F5F5F;
     background-color: #FAF3B8;
-    color: #5F5F5F;;
-    text-transform: uppercase;
+    color: #5F5F5F;
     font-weight: 400;
     font-size: 16px;
-	letter-spacing:0.1em;
-    -webkit-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
+    letter-spacing: .1em;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 .overlay ul li a:hover, .overlay ul li a:focus {
     background-color: #5F5F5F;
     color: #fff;
+}
+.overlay ul li:last-child a {
+    border-bottom: 1px solid #5F5F5F;
 }
 
 /* Effects */
